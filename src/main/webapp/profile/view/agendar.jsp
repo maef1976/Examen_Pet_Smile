@@ -9,7 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <title>Agendar</title>
 </head>
-<body style="background-color: #508bfc;">
+<body>
  <%
  Login_Bean obj_Login_Bean=(Login_Bean)session.getAttribute("user_session");
  Cliente_Bean obj_Cliente_Bean=(Cliente_Bean)session.getAttribute("cliente");
@@ -22,27 +22,22 @@
  <% 
  }else{
 %>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+<nav class="navbar navbar-expand-sm navbar-light bg-light" aria-label="Third navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="http://localhost:8070/clinica/profile/view/Home.jsp">Pet Smile</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="http://localhost:8070/clinica/profile/view/Home.jsp">Home</a>
+            <a class="nav-link active" aria-current="page" href="http://localhost:8070/clinica/profile/view/Home.jsp">Inicio</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="http://localhost:8070/clinica/profile/view/ingresarCliente.jsp" >Registrar Cliente</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="http://localhost:8070/clinica/profile/view/listarHoras.jsp" >Horas Agendadas</a>
+          <a class="nav-link" href="http://localhost:8070/clinica/profile/view/listarHoras.jsp" >Listar Horas</a>
           </li>
         </ul>
         <form>
-          <a href="http://localhost:8070/clinica/Signoutcontroller" id="salir" class="btn btn-outline-primary">
+          <a href="http://localhost:8070/clinica/Signoutcontroller" id="salir" class="btn btn-outline-secondary">
             Salir
           </a>
         </form>

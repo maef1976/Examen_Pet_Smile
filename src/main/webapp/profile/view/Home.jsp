@@ -26,27 +26,22 @@
  <% 
  }else{
  %>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+<nav class="navbar navbar-expand-sm navbar-light bg-light" aria-label="Third navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="http://localhost:8070/clinica/profile/view/Home.jsp">Pet Smile</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://localhost:8070/clinica/profile/view/Home.jsp">Home</a>
+            <a class="nav-link active" aria-current="page" href="http://localhost:8070/clinica/profile/view/Home.jsp">Inicio</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="http://localhost:8070/clinica/profile/view/ingresarCliente.jsp" >Registrar Cliente</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="http://localhost:8070/clinica/profile/view/listarHoras.jsp" >Horas Agendadas</a>
+          <a class="nav-link" href="http://localhost:8070/clinica/profile/view/listarHoras.jsp" >Listar Horas</a>
           </li>
         </ul>
         <form>
-          <a href="http://localhost:8070/clinica/Signoutcontroller" id="salir" class="btn btn-outline-primary">
+          <a href="http://localhost:8070/clinica/Signoutcontroller" id="salir" class="btn btn-outline-secondary">
             Salir
           </a>
         </form>
@@ -61,9 +56,9 @@
               <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-10">    
-                  <table class="table table-bordered border-secondary text-center mt-4">
+                  <table class="table table-bordered border-dark text-center mt-4">
                   <thead>
-                     <tr class="bg-primary text-white">
+                     <tr class="bg-secondary text-white">
                        <th scope="col">Rut</th>
                        <th scope="col">Nombre</th>
                        <th scope="col">Apellido</th>            
